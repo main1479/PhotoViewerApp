@@ -1,0 +1,27 @@
+
+h2.heading{
+   font-size: 2.8rem;
+   font-weight: 700;
+
+   @media only screen and (max-width:$mbl-land){
+      font-size: 2.5rem;
+   }
+}
+
+h3.heading{
+   font-size: 1.4rem;
+   font-weight: 900;
+}
+
+p.p__text{
+   font-size: 1.6rem;
+
+}
+.light{
+   opacity: 0.7;
+}
+
+.white{
+   color: #fff;
+}
+

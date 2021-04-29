@@ -1,0 +1,50 @@
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn {
+	font-size: 1.6rem;
+	// font-weight: bold;
+	transition: all 0.3s;
+}
+.btn__primary {
+	background: $color-primary;
+	color: #fff;
+	padding: 1rem 6rem;
+	border-radius: 8px;
+	box-shadow: 0 20px 40px rgba($color-primary, 0.15);
+
+	&:hover {
+		color: #fff;
+		opacity: 0.9;
+	}
+
+	&.btn-white {
+		background: #fff;
+		color: $color-secondary;
+	}
+}
+
+.btn__icon {
+	display: flex;
+	align-items: center;
+	color: $color-secondary;
+	transition: all 0.3s;
+	svg {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 1.5rem;
+		fill: currentColor;
+	}
+
+	&:hover {
+		color: $color-primary;
+	}
+
+	&.btn__sort{
+		svg{
+			margin-right: 0;
+			margin-left: 1.5rem;
+		}
+	}
+}

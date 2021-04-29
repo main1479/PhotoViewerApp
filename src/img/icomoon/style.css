@@ -1,0 +1,44 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-chevron-left {
+  width: 0.611328125em;
+}
+
+.icon-done {
+  width: 1.412109375em;
+}
+
+.icon-sort {
+  width: 1.1767578125em;
+}
+
+.icon-play {
+  width: 0.7666015625em;
+}
+
+.icon-image {
+  width: 1.111328125em;
+}
+
+.icon-edit {
+  width: 1.001953125em;
+}
+
+.icon-chevron-right {
+  width: 0.6162109375em;
+}
