@@ -1,6 +1,6 @@
 .btn:focus {
 	box-shadow: none;
-}
+} 
 
 .btn {
 	font-size: 1.6rem;
@@ -25,6 +25,12 @@
 	}
 }
 
+.btn__full{
+	width: 100%;
+	justify-content: center;
+	box-shadow: 0  20px 40px rgba(65, 69, 123, 0.15);
+}
+
 .btn__icon {
 	display: flex;
 	align-items: center;
@@ -47,4 +53,11 @@
 			margin-left: 1.5rem;
 		}
 	}
+	&.btn__text-big{
+		font-size: 2rem;
+	}
+}
+
+.pointer-events-none{
+	pointer-events: none;
 }

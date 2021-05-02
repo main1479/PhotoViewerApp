@@ -8,8 +8,11 @@
 @import './components/buttons.scss';
 @import './components/backSave.scss';
 @import './components/navbar.scss';
+@import './components/popups.scss';
 
 // ===============================
 // pages
 // ===============================
-@import './pages/homepage.scss';
+@import './pages/albumCreation.scss';
+@import './pages/slideShow.scss';
+@import './pages/cropPage.scss';

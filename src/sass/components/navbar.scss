@@ -1,7 +1,7 @@
 .nav {
 	margin-top: 5rem;
-   margin-bottom: 5rem;
-
+	margin-bottom: 5rem;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	&__container {
 		max-width: 1600px;
 		display: flex;
@@ -56,18 +56,17 @@
 			background-color: transparent;
 			border: 0;
 			overflow: visible;
-         transform: scale(.8);
-         transform-origin: bottom;
+			transform: scale(0.8);
+			transform-origin: bottom;
 			z-index: 9;
 
-         &:focus{
-            outline: 0;
-         }
+			&:focus {
+				outline: 0;
+			}
 		}
 		.hamburger:hover {
 			opacity: 0.7;
 		}
-		
 
 		.hamburger-box {
 			width: 3rem;
@@ -84,7 +83,7 @@
 		.hamburger-inner,
 		.hamburger-inner::before,
 		.hamburger-inner::after {
-			width:3rem;
+			width: 3rem;
 			height: 3px;
 			background-color: $color-secondary;
 			border-radius: 4px;
@@ -120,48 +119,47 @@
 				transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 		}
 
-      @media only screen and (max-width:$tab-land){
-         .nav__menu{
-            position: fixed;
-            width: 50%;
-            height: 100vh;
-            right: 0;
-            top: 0;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            background: $color-primary;
-            padding-left: 50px;
-            transform: translateX(100%);
-            transition: .5s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+		@media only screen and (max-width: $tab-land) {
+			.nav__menu {
+				position: fixed;
+				width: 50%;
+				height: 100vh;
+				right: 0;
+				top: 0;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				background: $color-primary;
+				padding-left: 50px;
+				transform: translateX(100%);
+				transition: 0.5s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
 				z-index: 8;
 
-            &-item{
-               margin-bottom: 20px;
-            }
+				&-item {
+					margin-bottom: 20px;
+				}
 
-            &-link{
-               color: #fff;
-            }
-         }
-      }
+				&-link {
+					color: #fff;
+				}
+			}
+		}
 
-      @media only screen and (max-width: $tab-port){
-         .nav__menu{
-            width: 80%;
-         }
-      }
-      @media only screen and (max-width: $mbl-small){
-         .nav__menu{
-            width: 100%;
-         }
-      }
+		@media only screen and (max-width: $tab-port) {
+			.nav__menu {
+				width: 80%;
+			}
+		}
+		@media only screen and (max-width: $mbl-small) {
+			.nav__menu {
+				width: 100%;
+			}
+		}
 
 		&.active {
-
-         .nav__menu{
-            transform: translateX(0) !important;
-         }
+			.nav__menu {
+				transform: translateX(0) !important;
+			}
 			.hamburger--spring .hamburger-inner {
 				transition-delay: 0.22s;
 				background-color: transparent !important;

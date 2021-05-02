@@ -173,37 +173,81 @@
 				</nav>
 				<div class="row">
 					<div class="col-lg-6 mb-2">
-						<figure class="img">
-							<video src="./img/video.mp4" poster="./img/img-big2.png" class="video"></video>
-						</figure>
+						<video src="./img/video.mp4" poster="./img/img-big2.png" class="video"></video>
 					</div>
 					<div class="col-lg-6 mb-2">
 						<div class="row">
 							<div class="col-lg-6 col-md-4 col-6 mb-2">
-								<figure class="img">
-									<video src="./img/video.mp4" poster="./img/img2.png" class="video"></video>
-								</figure>
+								<video src="./img/video.mp4" poster="./img/img2.png" class="video"></video>
 							</div>
 							<div class="col-lg-6 col-md-4 col-6 mb-2">
-								<figure class="img">
-									<video src="./img/video.mp4" poster="./img/img3.png" class="video"></video>
-								</figure>
+								<video src="./img/video.mp4" poster="./img/img3.png" class="video"></video>
 							</div>
 							<div class="col-lg-6 col-md-4 col-6 mb-2">
-								<figure class="img">
-									<video src="./img/video.mp4" poster="./img/img4.png" class="video"></video>
-								</figure>
+								<video src="./img/video.mp4" poster="./img/img4.png" class="video"></video>
 							</div>
 							<div class="col-lg-6 col-md-4 col-6 mb-2">
-								<figure class="img">
-									<video src="./img/video.mp4" poster="./img/img5.png" class="video"></video>
-								</figure>
+								<video src="./img/video.mp4" poster="./img/img5.png" class="video"></video>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- ============================================== -->
+		<!-- ============ addPhoto 1 popup ================ -->
+		<!-- ============================================== -->
+		<div class="popup active">
+			<nav class="nav mb-3">
+				<div class="container nav__container popup__container justify-content-end">
+					<button class="btn btn__icon mr-5">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-chevron-left"></use>
+						</svg>
+						Back
+					</button>
+					<button class="btn btn__icon">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-done"></use>
+						</svg>
+						Save
+					</button>
+				</div>
+			</nav>
+			<div class="border__bottom pb-1">
+				<h2 class="heading">Add to</h2>
+				<p class="p__text light">1 Selected</p>
+			</div>
+			<ul class="select__list mt-4 border__bottom">
+				<li class="select__list-item">
+					<div class="left">
+						<h3 class="heading">My family</h3>
+						<p class="p__text light">123 items</p>
+					</div>
+					<div class="right">
+						<input class="check__box" type="checkbox" id="myFamily" />
+						<label class="trigger" for="myFamily">&nbsp;</label>
+					</div>
+				</li>
+				<li class="select__list-item">
+					<div class="left">
+						<h3 class="heading">My student days</h3>
+						<p class="p__text light">121 items</p>
+					</div>
+					<div class="right">
+						<input class="check__box" type="checkbox" id="myStudentDays" />
+						<label class="trigger" for="myStudentDays">&nbsp;</label>
+					</div>
+				</li>
+			</ul>
+			<button class="btn btn__text-big btn__icon primary bold mt-1">
+				<svg>
+					<use xlink:href="./img/icons.svg#icon-add-rounded"></use>
+				</svg>
+				Create new album
+			</button>
+		</div>
+		<div class="overlay active">&nbsp;</div>
 
 		<!-- bootstrap files -->
 		<script src="js/jquery.js"></script>

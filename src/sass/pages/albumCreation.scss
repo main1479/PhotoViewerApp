@@ -1,0 +1,27 @@
+.create__album{
+
+   &-container{
+      max-width: 60rem;
+   }
+
+   .upload__box{
+      position: relative;
+
+      input[type="file"]{
+         opacity: 0;
+         visibility: hidden;
+         position: absolute;
+      }
+
+      .upload__label{
+         display: block;
+         cursor: pointer;
+         width: 100%;
+
+         img{
+            width: 100%;
+            object-fit: contain;
+         }
+      }
+   }
+}

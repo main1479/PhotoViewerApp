@@ -1,0 +1,114 @@
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 95%;
+	max-width: 76rem;
+	margin: 0 auto;
+	background: #fff;
+	z-index: 20;
+	padding: 5rem 4rem;
+   
+   &.active{
+      transform: translate(-50%, -50%) scale(1);
+
+   }
+
+	.nav {
+		margin-top: 0;
+
+      .btn__icon{
+         svg{
+            width: 1.5rem;
+            height: 1.5rem;
+         }
+      }
+	}
+
+	.border__bottom {
+		border-bottom: 0.5px solid #70707086;
+	}
+
+	.select__list {
+		&-item {
+			cursor: pointer;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+         margin-bottom: 4rem;
+
+			.right {
+				.check__box {
+					opacity: 0;
+					visibility: hidden;
+				}
+				.trigger {
+					width: 3.5rem;
+					height: 3.5rem;
+					border-radius: 4px;
+					background: #eee;
+               position: relative;
+               opacity: 0;
+               visibility: hidden;
+               cursor: pointer;
+
+					&::after {
+						content: '\2714';
+						color: #fff;
+                  position: absolute;
+                  font-size: 2.5rem;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  opacity: 0;
+                  pointer-events: none;
+                  // z-index: -1;
+					}
+				}
+             .check__box:checked ~ .trigger{
+               background: $color-primary-light ;
+               opacity: 1;
+               visibility: visible;
+
+               &::after{
+                  opacity: 1;
+               }
+            }
+			}
+
+         &:hover{
+            .right{
+               .trigger{
+                  opacity: 1;
+                  visibility: visible;
+               }
+            }
+         }
+		}
+	}
+
+   &.popup__success{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+   }
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.4);
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+	z-index: 10;
+   transform: scale(0);
+   &.active{
+      transform:scale(1);
+
+   }
+}

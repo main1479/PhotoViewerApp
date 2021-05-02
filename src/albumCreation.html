@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font-awesome  -->
+		<!-- <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script> -->
+		<!--Css files  -->
+		<!-- <link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" /> -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- ===================================== -->
+		<!-- ============ navigation area ======== -->
+		<!-- ===================================== -->
+		<nav class="nav">
+			<div class="container nav__container">
+				<div class="nav__left">
+					<h2 class="heading">My albums</h2>
+				</div>
+				<div class="nav__right">
+					<a href="#" class="btn btn__icon btn__sort">
+						Sort
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-sort"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- ================================================== -->
+		<!-- ============== file upload area ================== -->
+		<!-- ================================================== -->
+		<section class="create__album">
+			<div class="container create__album-container">
+				<nav class="nav mb-2">
+					<div class="container nav__container popup__container justify-content-end">
+						<button class="btn btn__icon mr-5">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-chevron-left"></use>
+							</svg>
+							Back
+						</button>
+						<button class="btn btn__icon">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-done"></use>
+							</svg>
+							Save
+						</button>
+					</div>
+				</nav>
+				<div class="upload__box mb-2">
+					<input type="file" name="file" id="upload" />
+					<label for="upload" class="upload__label">
+						<img src="img/upload.png" alt="img" />
+					</label>
+				</div>
+				<button class="btn btn__icon btn__sort btn__text-big m-auto">
+					<h3 class="h1 bold">Album title</h3>
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-edit"></use>
+					</svg>
+				</button>
+
+				<button class="btn btn__primary btn__full btn__icon white mt-3">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-add-rounded"></use>
+					</svg>
+					Add Pictures
+				</button>
+
+				<p class="p__text light text-center mt-5">You haven't chosen any media yet</p>
+			</div>
+		</section>
+
+		<!-- bootstrap files -->
+		<script src="js/jquery.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+		<!-- carousel -->
+		<!-- <script src="js/owl.carousel.min.js"></script> -->
+
+		<!-- Main js file -->
+		<script src="js/index.js"></script>
+	</body>
+</html>
